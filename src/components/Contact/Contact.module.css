@@ -4,13 +4,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .contact_info {
   margin-right: 10px;
 }
+
 .text {
   margin-left: 8px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
 
 .btn {
@@ -19,7 +28,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
 }
 
 .btn:hover {
@@ -54,11 +64,11 @@
   align-items: center;
 }
 
-.modal-content {
+.modalContent {
   margin-bottom: 20px;
 }
 
-.modal-btn {
+.modalBtn {
   background-color: #4caf50;
   color: white;
   border: none;
@@ -72,10 +82,44 @@
   border-radius: 4px;
 }
 
-.modal-btn:last-child {
+.modalBtn:last-child {
   background-color: #f44336;
 }
 
-.modal-btn:hover {
+.modalBtn:hover {
   opacity: 0.8;
+}
+
+.modalContent h2 {
+  margin-bottom: 20px;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent form label {
+  margin-bottom: 10px;
+}
+
+.modalContent form input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalContent form div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modalContent form button {
+  margin-right: 10px;
+}
+
+.modalContent form button:last-child {
+  margin-right: 0;
 }
